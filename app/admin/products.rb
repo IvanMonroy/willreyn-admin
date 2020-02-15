@@ -7,9 +7,15 @@ ActiveAdmin.register Product do
 
   # Filterable attributes on the index screen
   filter :id
-  filter :quantity
   filter :name
   filter :price
+  filter :description
+  filter :mark
+  filter :imgurl
+  filter :available
+  filter :image
+  filter :image
+  filter :category
 
   # Customize columns displayed on the index screen in the table
   controller do
