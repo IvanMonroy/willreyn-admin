@@ -5,7 +5,7 @@ ActiveAdmin.register Product do
 
   # Create sections on the index screen
   index do
-    column  :id
+    id_column
     column  :name
     column  :price
     column  :description
@@ -16,6 +16,7 @@ ActiveAdmin.register Product do
     column "Image" do |product|
       image_tag product.image.url, class: 'my_image_size'
     end
+    actions
     end
   # Filterable attributes on the index screen
   filter :id
