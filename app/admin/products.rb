@@ -4,7 +4,19 @@ ActiveAdmin.register Product do
   actions :all
 
   # Create sections on the index screen
-
+  index do
+    column  :id
+    column  :name
+    column  :price
+    column  :description
+    column  :mark
+    column  :imgurl
+    column  :available
+    column  :category
+    column "Image" do |product|
+      image_tag product.image.url, class: 'my_image_size'
+    end
+    end
   # Filterable attributes on the index screen
   filter :id
   filter :name
@@ -23,7 +35,7 @@ ActiveAdmin.register Product do
       f.input :mark
       f.input :imgurl
       f.input :available
-      f.input :image, :as => :file, :hint => f.template.image_tag(f.object.image.url(:thumb))
+      f.input :image, :as => :file
       f.input :category
 
     end
