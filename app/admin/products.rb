@@ -14,14 +14,13 @@ ActiveAdmin.register Product do
   filter :imgurl
   filter :available
   filter :image
-  filter :image
   filter :category
 
   # Customize columns displayed on the index screen in the table
   controller do
    private
     def product_params
-      params.require(:product).permit(:name, :quantity, :price)
+      params.require(:product).permit(:name, :price, :description ,:mark ,:imgurl ,:available ,:image, :category )
     end
 
   end
