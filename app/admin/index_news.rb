@@ -41,7 +41,7 @@ ActiveAdmin.register IndexNew do
   controller do
    private
     def index_new_params
-      params.require(:index_new).permit(:name, :title, :bodyone ,:subtitle ,:bodytwho ,:subtitletwo ,:bodythree )
+      params.require(:index_new).permit(:title, :bodyone ,:subtitle ,:bodytwho ,:subtitletwo ,:bodythree )
     end
 
 
