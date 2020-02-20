@@ -1,0 +1,2 @@
+class IndexNew < ApplicationRecord
+end
