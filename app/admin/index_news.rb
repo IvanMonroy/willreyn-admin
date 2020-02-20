@@ -17,7 +17,6 @@ ActiveAdmin.register IndexNew do
     end
   # Filterable attributes on the index screen
 
-  filter  :name
   filter  :title
   filter  :bodyone
   filter  :subtitle
@@ -27,7 +26,6 @@ ActiveAdmin.register IndexNew do
 
   form(:html => { :multipart => true }) do |f|
     f.inputs "Agregar noticias" do
-      f.input  :name
       f.input  :title
       f.input  :bodyone
       f.input  :subtitle
