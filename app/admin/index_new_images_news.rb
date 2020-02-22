@@ -5,7 +5,9 @@ ActiveAdmin.register ImagesNew do
   actions :all
 
   # Create sections on the index screen
-  index do
+  index :title => Proc.new{
+
+  } do
     id_column
     column "Imagen 1" do |product|
       image_tag product.imageone.url, class: 'my_image_size'
