@@ -23,7 +23,7 @@ ActiveAdmin.register ImagesNew do
 
   form(:html => { :multipart => true }) do |f|
       f.inputs do
-        f.input :index_new_id, :label => 'Noticia ', :as => :select, :collection => IndexNew.all.map {|u| ["#{u.title}" , u.id]} || default_value
+        f.input :index_news_id, :label => 'Noticia ', :as => :select, :collection => IndexNew.all.map {|u| ["#{u.title}" , u.id]} || default_value
         f.input :imageone, :as => :file
         f.input :imagetho, :as => :file
         f.input :imagethree, :as => :file
@@ -33,9 +33,11 @@ ActiveAdmin.register ImagesNew do
 
   # Customize columns displayed on the index screen in the table
   controller do
+    alias_method :index_new, :parent
+    helper_method :index_new
    private
     def index_new_images_news_params
-      params.require(:images_new).permit(:imageone, :index_new_id, :imagetho ,:imagethree )
+      params.require(:images_new).permit(:imageone, :index_news_id, :imagetho ,:imagethree )
     end
 
   end
