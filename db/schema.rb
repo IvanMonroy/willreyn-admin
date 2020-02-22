@@ -10,15 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_19_211033) do
+ActiveRecord::Schema.define(version: 2020_02_22_184346) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
     t.string "resource_type"
-    t.integer "resource_id"
+    t.bigint "resource_id"
     t.string "author_type"
-    t.integer "author_id"
+    t.bigint "author_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
@@ -43,12 +46,34 @@ ActiveRecord::Schema.define(version: 2019_10_19_211033) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
+  create_table "index_news", force: :cascade do |t|
+    t.string "title"
+    t.text "bodyone"
+    t.text "subtitle"
+    t.text "bodytwho"
+    t.string "subtitletwo"
+    t.text "bodythree"
+    t.text "imageone"
+    t.text "imagetwo"
+    t.text "imagethree"
+  end
+
+  create_table "news", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.text "imageNew"
+    t.string "imageurl"
+  end
+
   create_table "products", force: :cascade do |t|
-    t.string "name", null: false
-    t.float "price", null: false
-    t.float "quantity", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "name"
+    t.float "price"
+    t.string "description"
+    t.string "mark"
+    t.string "imgurl"
+    t.string "available"
+    t.text "image"
+    t.string "category"
   end
 
 end

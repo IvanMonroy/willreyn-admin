@@ -1,5 +1,5 @@
 # app/admin/products.rb
-ActiveAdmin.register IndexNew do
+ActiveAdmin.register IndexNew, :as => "Noticias"  do
 
   actions :all
 
@@ -13,6 +13,15 @@ ActiveAdmin.register IndexNew do
     column  :bodytwho
     column  :subtitletwo
     column  :bodythree
+    column "Imagen 1" do |product|
+      image_tag product.imageone.url, class: 'my_image_size'
+    end
+    column "Imagen 2" do |product|
+      image_tag product.imagetwo.url, class: 'my_image_size'
+    end
+    column "Imagen 3" do |product|
+      image_tag product.imagethree.url, class: 'my_image_size'
+    end
     actions
     end
   # Filterable attributes on the index screen
@@ -32,6 +41,9 @@ ActiveAdmin.register IndexNew do
       f.input  :bodytwho
       f.input  :subtitletwo
       f.input  :bodythree
+      f.input :imageone, :as => :file
+      f.input :imagetwo, :as => :file
+      f.input :imagethree, :as => :file
     end
     f.actions
   end
@@ -39,7 +51,7 @@ ActiveAdmin.register IndexNew do
   controller do
    private
     def index_new_params
-      params.require(:index_new).permit(:title, :bodyone ,:subtitle ,:bodytwho ,:subtitletwo ,:bodythree )
+      params.require(:index_new).permit(:title, :bodyone ,:subtitle ,:bodytwho ,:subtitletwo ,:bodythree,:imageone, :imagetwo ,:imagethree )
     end
 
 

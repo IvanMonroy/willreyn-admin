@@ -7,6 +7,9 @@ class CreateIndexNews < ActiveRecord::Migration[5.2]
       t.text :bodytwho
       t.string :subtitletwo
       t.text :bodythree
+      t.text :imageone
+      t.text :imagetwo
+      t.text :imagethree
     end
   end
 end

@@ -1,5 +1,5 @@
 # app/admin/products.rb
-ActiveAdmin.register Product do
+ActiveAdmin.register Product, :as => "Productos" do
 
   actions :all
 
