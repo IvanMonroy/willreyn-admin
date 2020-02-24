@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_22_184346) do
+ActiveRecord::Schema.define(version: 2020_02_22_225946) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -74,6 +74,30 @@ ActiveRecord::Schema.define(version: 2020_02_22_184346) do
     t.string "available"
     t.text "image"
     t.string "category"
+  end
+
+  create_table "works", force: :cascade do |t|
+    t.string "title"
+    t.string "category"
+    t.text "description"
+    t.text "first_image"
+    t.string "first_header"
+    t.text "first_description"
+    t.text "second_image"
+    t.string "second_header"
+    t.text "second_description"
+    t.text "third_image"
+    t.string "third_header"
+    t.text "third_description"
+    t.text "fourth_image"
+    t.string "fourth_header"
+    t.text "fourth_description"
+    t.text "fifth_image"
+    t.string "fifth_header"
+    t.text "fifth_description"
+    t.text "sixth_image"
+    t.string "sixth_header"
+    t.text "sixth_description"
   end
 
 end

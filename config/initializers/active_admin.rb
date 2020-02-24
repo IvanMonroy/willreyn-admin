@@ -9,14 +9,14 @@ ActiveAdmin.setup do |config|
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #
-  # config.site_title_link = "/"
+   config.site_title_link = "/"
 
   # Set an optional image to be displayed for the header
   # instead of a string (overrides :site_title)
   #
   # Note: Aim for an image that's 21px high so it fits in the header.
   #
-  # config.site_title_image = "logo.png"
+  config.site_title_image = "logo-72x40.png"
 
   # == Default Namespace
   #
@@ -30,7 +30,7 @@ ActiveAdmin.setup do |config|
   # will namespace routes to /hello_world/*
   #
   # To set no namespace by default, use:
-  #   config.default_namespace = false
+     config.default_namespace = false
   #
   # Default:
   # config.default_namespace = :admin
@@ -124,7 +124,7 @@ ActiveAdmin.setup do |config|
   # This allows your users to comment on any resource registered with Active Admin.
   #
   # You can completely disable comments:
-  # config.comments = false
+   config.comments = false
   #
   # You can change the name under which comments are registered:
   # config.comments_registration_name = 'AdminComment'
@@ -165,6 +165,7 @@ ActiveAdmin.setup do |config|
   # To understand how to localize your app with I18n, read more at
   # https://guides.rubyonrails.org/i18n.html
   #
+  config.meta_tags = { author: 'Willreyn', title: 'Willreyn' }
   # You can run `bin/rails runner 'puts I18n.t("date.formats")'` to see the
   # available formats in your application.
   #
@@ -325,4 +326,12 @@ ActiveAdmin.setup do |config|
   # You can inherit it with own class and inject it for all resources
   #
   # config.order_clause = MyOrderClause
+  ActiveAdmin::Views::Pages::Base.class_eval do
+    private
+    def build_footer
+      div :id => 'footer' do
+        "Administrador | Tecni Hiráulicos Willreyn. Desarrollado por: &nbsp;<img src='#{asset_path('logo-72x40.png')}' height='15px' ></img> Willreyn  #{Time.zone.now.year.to_s}.".html_safe
+      end
+    end
+  end
 end
