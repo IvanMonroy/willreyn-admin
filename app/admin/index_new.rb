@@ -6,13 +6,13 @@ ActiveAdmin.register IndexNew, :as => "Noticias"  do
   # Create sections on the index screen
   index do
     id_column
-    column  :name
-    column  :title
-    column  :bodyone
-    column  :subtitle
-    column  :bodytwho
-    column  :subtitletwo
-    column  :bodythree
+    column  "Nombre", :name
+    column  "Titulo", :title
+    column  "Cuerpo 1", :bodyone
+    column  "Subtitlo 1", :subtitle
+    column  "Cuerpo 2", :bodytwho
+    column  "Subtitulo 2", :subtitletwo
+    column  "Cuerpo 3", :bodythree
     column "Imagen 1" do |product|
       image_tag product.imageone.url, class: 'my_image_size'
     end
@@ -35,15 +35,15 @@ ActiveAdmin.register IndexNew, :as => "Noticias"  do
 
   form(:html => { :multipart => true }) do |f|
     f.inputs "Agregar noticias" do
-      f.input  :title
-      f.input  :bodyone
-      f.input  :subtitle
-      f.input  :bodytwho
-      f.input  :subtitletwo
-      f.input  :bodythree
-      f.input :imageone, :as => :file
-      f.input :imagetwo, :as => :file
-      f.input :imagethree, :as => :file
+      f.input  :title, label: "Titulo"
+      f.input  :bodyone, label: "Cuerpo 1"
+      f.input  :subtitle, label: "Subtitulo"
+      f.input  :bodytwho, label: "Cuerpo 2"
+      f.input  :subtitletwo, label: "Subtitulo 2"
+      f.input  :bodythree, label: "Cuerpo 3"
+      f.input :imageone, :as => :file, label: "Imagen 1"
+      f.input :imagetwo, :as => :file, label: "Imagen 2"
+      f.input :imagethree, :as => :file, label: "Imagen 3"
     end
     f.actions
   end

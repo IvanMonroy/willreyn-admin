@@ -7,9 +7,9 @@ ActiveAdmin.register Work, :as => "Trabajos"  do
   # Create sections on the index screen
   index do
     id_column
-    column  :title
-    column  :category
-    column  :description
+    column  "Titulo", :title
+    column  "Categoría", :category
+    column  "Descripción", :description
     actions
     end
   # Filterable attributes on the index screen
@@ -22,27 +22,27 @@ ActiveAdmin.register Work, :as => "Trabajos"  do
   form(:html => { :multipart => true }) do |f|
     f.inputs "Crear trabajos" do
 
-      f.input :title
-      f.input :category
-      f.input :description
-      f.input :first_image, :as => :file
-      f.input :first_header
-      f.input :first_description
-      f.input :second_image, :as => :file
-      f.input :second_header
-      f.input :second_description
-      f.input :third_image, :as => :file
-      f.input :third_header
-      f.input :third_description
-      f.input :fourth_image, :as => :file
-      f.input :fourth_header
-      f.input :fourth_description
-      f.input :fifth_image, :as => :file
-      f.input :fifth_header
-      f.input :fifth_description
-      f.input :sixth_image, :as => :file
-      f.input :sixth_header
-      f.input :sixth_description
+      f.input :title, label: "Titulo"
+      f.input :category, label: "Categoría"
+      f.input :description, label: "Descripción"
+      f.input :first_image, :as => :file, label: "Primera imagen"
+      f.input :first_header, label: "Cabecera 1"
+      f.input :first_description, label: "Descripción 1"
+      f.input :second_image, :as => :file , label: "Segunda Imagen"
+      f.input :second_header, label: "Cabecera 2"
+      f.input :second_description, label: "Descripción 2"
+      f.input :third_image, :as => :file, label: "Tercera Imagen"
+      f.input :third_header, label: "Cabecera 3"
+      f.input :third_description, label: "Descripción 3"
+      f.input :fourth_image, :as => :file, label: "Cuarta Imagen"
+      f.input :fourth_header, label: "Cabecera 4"
+      f.input :fourth_description, label: "Descripción cuatro"
+      f.input :fifth_image, :as => :file, label: "Quinta Imagen"
+      f.input :fifth_header, label: "Cabecera 5"
+      f.input :fifth_description, label: "Descripción 5"
+      f.input :sixth_image, :as => :file, label: "Sexta Imagen"
+      f.input :sixth_header, label: "Cabecera 6"
+      f.input :sixth_description, label: "Descripción 6"
     end
     f.actions
   end

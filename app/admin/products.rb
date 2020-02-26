@@ -6,14 +6,14 @@ ActiveAdmin.register Product, :as => "Productos" do
   # Create sections on the index screen
   index do
     id_column
-    column  :name
-    column  :price
-    column  :description
-    column  :mark
-    column  :imgurl
-    column  :available
-    column  :category
-    column "Image" do |product|
+    column  "Nombre", :name
+    column  "Precio", :price
+    column  "Descripción", :description
+    column  "Marca", :mark
+    column  "Url de imagen", :imgurl
+    column  "Disponible", :available
+    column  "Categoría", :category
+    column "Imagen" do |product|
       image_tag product.image.url, class: 'my_image_size'
     end
     actions
@@ -30,14 +30,14 @@ ActiveAdmin.register Product, :as => "Productos" do
 
   form(:html => { :multipart => true }) do |f|
     f.inputs "Agregar productos" do
-      f.input :name
-      f.input :price
-      f.input :description
-      f.input :mark
-      f.input :imgurl
-      f.input :available
-      f.input :image, :as => :file
-      f.input :category
+      f.input :name, label: "Nombre"
+      f.input :price, label: "Precio"
+      f.input :description, label: "Descripción"
+      f.input :mark, label: "Marca"
+      f.input :imgurl, label: "Url de Imagen"
+      f.input :available, label: "Disponibilidad"
+      f.input :image, :as => :file, label: "Imagen"
+      f.input :category, label: "Categoría"
 
     end
     f.actions
