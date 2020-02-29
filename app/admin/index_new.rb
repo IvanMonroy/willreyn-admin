@@ -2,6 +2,7 @@
 ActiveAdmin.register IndexNew, :as => "Noticias"  do
 
   actions :all
+  permit_params :title, :bodyone ,:subtitle ,:bodytwho ,:subtitletwo ,:bodythree,:imageone, :imagetwo ,:imagethree
 
   # Create sections on the index screen
   index do

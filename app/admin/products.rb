@@ -2,7 +2,7 @@
 ActiveAdmin.register Product, :as => "Productos" do
 
   actions :all
-
+  permit_params :name, :price, :description ,:mark ,:imgurl ,:available ,:image, :category
   # Create sections on the index screen
   index do
     id_column
