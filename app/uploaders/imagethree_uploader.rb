@@ -5,7 +5,7 @@ class ImagethreeUploader < CarrierWave::Uploader::Base
 
   # Choose what kind of storage to use for this uploader:
   include CarrierWave::MiniMagick
-  storage :fog
+  storage :file
 
   # move this line outside of your method
   process resize_to_fit: [512,512]

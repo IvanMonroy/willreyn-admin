@@ -4,7 +4,7 @@ class ImagetwoUploader < CarrierWave::Uploader::Base
   # include CarrierWave::MiniMagick
 
   include CarrierWave::MiniMagick
-  storage :fog
+  storage :file
 
   # move this line outside of your method
   process resize_to_fit: [512,512]
