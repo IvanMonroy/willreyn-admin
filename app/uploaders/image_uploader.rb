@@ -3,24 +3,17 @@ class ImageUploader < CarrierWave::Uploader::Base
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
 
-  # Choose what kind of storage to use for this uploader:
-  include CarrierWave::MiniMagick
-  storage :file
+  include Cloudinary::CarrierWave
 
-  # move this line outside of your method
-  process resize_to_fit: [512,512]
+  process :convert => 'png'
+  process :tags => ['post_picture']
 
-  version :medium do
-
-    # change the word 'fit' to 'fill'
-    process resize_to_fill: [250,250]
+  version :standard do
+    process :resize_to_fill => [100, 150, :north]
   end
 
-  def store_dir
-    "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+  version :thumbnail do
+    resize_to_fit(50, 50)
   end
 
-  def extension_white_list
-    %w(jpg jpeg gif png)
-  end
 end
