@@ -2,7 +2,7 @@
 ActiveAdmin.register IndexNew, :as => "Noticias"  do
 
   actions :all
-  permit_params :title, :bodyone ,:subtitle ,:bodytwho ,:subtitletwo ,:bodythree,:imageone, :imagetwo ,:imagethree
+  permit_params :title, :bodyone ,:subtitle ,:bodytwho ,:subtitletwo ,:bodythree,:imageone, :imagetwo ,:imagethree, :img_url_one, :img_url_two, :img_url_three
 
   # Create sections on the index screen
   index do
@@ -14,15 +14,6 @@ ActiveAdmin.register IndexNew, :as => "Noticias"  do
     column  "Cuerpo 2", :bodytwho
     column  "Subtitulo 2", :subtitletwo
     column  "Cuerpo 3", :bodythree
-    column "Imagen 1" do |product|
-      image_tag product.imageone.url, class: 'my_image_size'
-    end
-    column "Imagen 2" do |product|
-      image_tag product.imagetwo.url, class: 'my_image_size'
-    end
-    column "Imagen 3" do |product|
-      image_tag product.imagethree.url, class: 'my_image_size'
-    end
     actions
     end
   # Filterable attributes on the index screen
@@ -42,6 +33,9 @@ ActiveAdmin.register IndexNew, :as => "Noticias"  do
       f.input  :bodytwho, label: "Cuerpo 2"
       f.input  :subtitletwo, label: "Subtitulo 2"
       f.input  :bodythree, label: "Cuerpo 3"
+      f.input  :img_url_one, label: "Url imagen 1"
+      f.input  :img_url_two, label: "Url imagen 2"
+      f.input  :img_url_three, label: "Url imagen 3"
       f.input :imageone, :as => :file, label: "Imagen 1"
       f.input :imagetwo, :as => :file, label: "Imagen 2"
       f.input :imagethree, :as => :file, label: "Imagen 3"
@@ -52,7 +46,7 @@ ActiveAdmin.register IndexNew, :as => "Noticias"  do
   controller do
    private
     def index_new_params
-      params.require(:index_new).permit(:title, :bodyone ,:subtitle ,:bodytwho ,:subtitletwo ,:bodythree,:imageone, :imagetwo ,:imagethree )
+      params.require(:index_new).permit(:title, :bodyone ,:subtitle ,:bodytwho ,:subtitletwo ,:bodythree,:imageone, :imagetwo ,:imagethree, :img_url_one, :img_url_two, :img_url_three )
     end
 
 

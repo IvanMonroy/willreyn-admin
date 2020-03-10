@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_22_225946) do
+ActiveRecord::Schema.define(version: 2020_03_10_012522) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,6 +56,9 @@ ActiveRecord::Schema.define(version: 2020_02_22_225946) do
     t.text "imageone"
     t.text "imagetwo"
     t.text "imagethree"
+    t.string "img_url_one"
+    t.string "img_url_two"
+    t.string "img_url_three"
   end
 
   create_table "news", force: :cascade do |t|
@@ -63,6 +66,7 @@ ActiveRecord::Schema.define(version: 2020_02_22_225946) do
     t.text "description"
     t.text "imageNew"
     t.string "imageurl"
+    t.string "img_url"
   end
 
   create_table "products", force: :cascade do |t|
@@ -98,6 +102,12 @@ ActiveRecord::Schema.define(version: 2020_02_22_225946) do
     t.text "sixth_image"
     t.string "sixth_header"
     t.text "sixth_description"
+    t.string "img_url_one"
+    t.string "img_url_two"
+    t.string "img_url_three"
+    t.string "img_url_fourth"
+    t.string "img_url_fifth"
+    t.string "img_url_sixth"
   end
 
 end
