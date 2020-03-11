@@ -13,9 +13,6 @@ ActiveAdmin.register Product, :as => "Productos" do
     column  "Url de imagen", :imgurl
     column  "Disponible", :available
     column  "Categoría", :category
-    column "Imagen" do |product|
-      image_tag product.image.url, class: 'my_image_size'
-    end
     actions
     end
   # Filterable attributes on the index screen
