@@ -2,18 +2,17 @@
 ActiveAdmin.register IndexNew, :as => "Noticias"  do
 
   actions :all
-  permit_params :title, :bodyone ,:subtitle ,:bodytwho ,:subtitletwo ,:bodythree,:imageone, :imagetwo ,:imagethree, :img_url_one, :img_url_two, :img_url_three
+  permit_params :title, :bodyone ,:subtitle ,:bodytwho ,:subtitletwo ,:bodythree,:imageone, :imagetwo ,:imagethree, :img_url_one, :img_url_two, :img_url_three, :autor, :note_1, :note_2
 
   # Create sections on the index screen
   index do
     id_column
     column  "Nombre", :name
     column  "Titulo", :title
-    column  "Cuerpo 1", :bodyone
     column  "Subtitlo 1", :subtitle
-    column  "Cuerpo 2", :bodytwho
     column  "Subtitulo 2", :subtitletwo
-    column  "Cuerpo 3", :bodythree
+    column  "Autor", :autor
+    column  "Nota 1", :none_1
     actions
     end
   # Filterable attributes on the index screen
@@ -36,9 +35,12 @@ ActiveAdmin.register IndexNew, :as => "Noticias"  do
       f.input  :img_url_one, label: "Url imagen 1"
       f.input  :img_url_two, label: "Url imagen 2"
       f.input  :img_url_three, label: "Url imagen 3"
-      f.input :imageone, :as => :file, label: "Imagen 1"
-      f.input :imagetwo, :as => :file, label: "Imagen 2"
-      f.input :imagethree, :as => :file, label: "Imagen 3"
+      f.input  :autor, label: "Información del autor"
+      f.input  :note_1, label: "Url imagen 3"
+      f.input  :note_2, label: "Url imagen 3"
+      # f.input :imageone, :as => :file, label: "Imagen 1"
+      # f.input :imagetwo, :as => :file, label: "Imagen 2"
+      # f.input :imagethree, :as => :file, label: "Imagen 3"
     end
     f.actions
   end
@@ -46,7 +48,7 @@ ActiveAdmin.register IndexNew, :as => "Noticias"  do
   controller do
    private
     def index_new_params
-      params.require(:index_new).permit(:title, :bodyone ,:subtitle ,:bodytwho ,:subtitletwo ,:bodythree,:imageone, :imagetwo ,:imagethree, :img_url_one, :img_url_two, :img_url_three )
+      params.require(:index_new).permit(:title, :bodyone ,:subtitle ,:bodytwho ,:subtitletwo ,:bodythree,:imageone, :imagetwo ,:imagethree, :img_url_one, :img_url_two, :img_url_three , :autor, :note_1, :note_2)
     end
 
 
