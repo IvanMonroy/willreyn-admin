@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_10_012522) do
+ActiveRecord::Schema.define(version: 2020_03_12_003539) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,6 +59,9 @@ ActiveRecord::Schema.define(version: 2020_03_10_012522) do
     t.string "img_url_one"
     t.string "img_url_two"
     t.string "img_url_three"
+    t.string "autor"
+    t.string "note_1"
+    t.string "note_2"
   end
 
   create_table "news", force: :cascade do |t|
