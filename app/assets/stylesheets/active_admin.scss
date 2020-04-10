@@ -764,8 +764,8 @@ th, td, caption {
 
 /* line 4, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/_header.scss */
 #header {
-  background-color: #730E15;
-  background-image: linear-gradient(180deg, #730E15,  #730E15);
+  background-color: #0e5273;
+  background-image: linear-gradient(180deg, #0e5273,  #0e5273);
   border-bottom: 1px solid #44484b;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
   text-shadow: #000 0 1px 0;
@@ -841,7 +841,7 @@ th, td, caption {
 }
 /* line 72, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/_header.scss */
 #header ul.tabs > li.current > a {
-  background: #af8083;
+  background: #8097af;
   color: #fff;
 }
 /* line 77, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/_header.scss */
@@ -851,12 +851,12 @@ th, td, caption {
 }
 /* line 82, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/_header.scss */
 #header ul.tabs > li.has_nested.current > a {
-  background: #af8083 url(/assets/active_admin/nested_menu_arrow_dark-7c43b8e0a5f8823875f49a093c9d7a6b374f885b6f9cc248ae9cd7e6e9b29034.gif) no-repeat calc(100% - 7px) 50%;
+  background: #8097af url(/assets/active_admin/nested_menu_arrow_dark-7c43b8e0a5f8823875f49a093c9d7a6b374f885b6f9cc248ae9cd7e6e9b29034.gif) no-repeat calc(100% - 7px) 50%;
   padding-right: 20px;
 }
 /* line 87, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/_header.scss */
 #header ul.tabs > li:hover > a {
-  background: #af8083;
+  background: #8097af;
   color: #fff;
 }
 /* line 92, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/_header.scss */
@@ -864,8 +864,8 @@ th, td, caption {
   border-radius: 0;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  border-bottom: 5px solid #af8083;
-  background: #af8083 url(/assets/active_admin/nested_menu_arrow_dark-7c43b8e0a5f8823875f49a093c9d7a6b374f885b6f9cc248ae9cd7e6e9b29034.gif) no-repeat calc(100% - 7px) 50%;
+  border-bottom: 5px solid #8097af;
+  background: #8097af url(/assets/active_admin/nested_menu_arrow_dark-7c43b8e0a5f8823875f49a093c9d7a6b374f885b6f9cc248ae9cd7e6e9b29034.gif) no-repeat calc(100% - 7px) 50%;
   z-index: 1020;
 }
 /* line 101, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/_header.scss */
@@ -874,7 +874,7 @@ th, td, caption {
 }
 /* line 103, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/_header.scss */
 #header ul.tabs > li ul {
-  background: #af8083;
+  background: #8097af;
   border-top-right-radius: 10px;
   border-top-left-radius: 0;
   border-bottom-right-radius: 10px;
@@ -973,7 +973,7 @@ form fieldset legend {
 form fieldset legend span {
   display: block;
   background-color: #efefef;
-  background-image: linear-gradient(180deg,#ffdfdf, #ffdfdf);
+  background-image: linear-gradient(180deg,#dffeff, #dffeff);
   text-shadow: #fff 0 1px 0;
   border: solid 1px #cdcdcd;
   border-color: #d4d4d4;
@@ -1230,15 +1230,15 @@ form input[type=submit], form input[type=button], form button {
   padding: 7px 16px 6px;
   text-decoration: none;
   background-color: #ffcaca;
-  background-image: linear-gradient(180deg, #730E15, #730E15);
+  background-image: linear-gradient(180deg, #0e5273, #0e5273);
   text-shadow: #000 0 1px 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
   border: solid 1px #932419;
-  border-color: #730E15;
-  border-top-color: #730E15;
-  border-right-color: #730E15;
-  border-bottom-color: #730E15;
-  border-left-color: #730E15;
+  border-color: #0e5273;
+  border-top-color: #0e5273;
+  border-right-color: #0e5273;
+  border-bottom-color: #0e5273;
+  border-left-color: #0e5273;
   color: #efefef;
   cursor: pointer;
 }
@@ -1249,14 +1249,14 @@ form input[type=submit].disabled, form input[type=button].disabled, form button.
 }
 /* line 29, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
 form input[type=submit]:not(.disabled):hover, form input[type=button]:not(.disabled):hover, form button:not(.disabled):hover {
-  background-color: #96595d;
-  background-image: linear-gradient(180deg, #96595d, #96595d);
+  background-color: #599096;
+  background-image: linear-gradient(180deg, #599096, #599096);
 }
 /* line 33, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
 form input[type=submit]:not(.disabled):active, form input[type=button]:not(.disabled):active, form button:not(.disabled):active {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px #FFF;
-  background-color: #96595d;
-  background-image: linear-gradient(180deg, #96595d, #96595d);
+  background-color: #599096;
+  background-image: linear-gradient(180deg, #599096, #599096);
 }
 /* line 228, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/_forms.scss */
 form .buttons, form .actions {
@@ -1542,8 +1542,8 @@ body.logged_out .flash {
 /* line 19, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
 .ui-datepicker .ui-datepicker-header {
   height: 14px;
-  background-color: #730E15;
-  background-image: linear-gradient(180deg, #730E15,  #730E15);
+  background-color: #0e5273;
+  background-image: linear-gradient(180deg, #0e5273,  #0e5273);
   border-bottom: 1px solid #44484b;
   padding: 12px 5px 7px 4px;
   margin: 0px 0px 2px 2px;
@@ -1563,7 +1563,7 @@ body.logged_out .flash {
   height: 0px;
   border-left: 8.5px solid rgba(0, 0, 0, 0);
   border-right: 8.5px solid rgba(0, 0, 0, 0);
-  border-bottom: 10px solid #730E15;
+  border-bottom: 10px solid #0e5273;
 }
 /* line 42, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
 .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
@@ -1622,7 +1622,7 @@ body.logged_out .flash {
   border-bottom-left-radius: 3px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.26);
   background-color: #f4f4f4;
-  border: solid 1px #730E15;
+  border: solid 1px #0e5273;
   left: 2px;
   margin-bottom: 0px;
   position: relative;
@@ -1662,12 +1662,12 @@ body.logged_out .flash {
 }
 /* line 131, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
 .ui-datepicker table.ui-datepicker-calendar tbody td a.ui-state-active {
-  background-color: #730E15;
+  background-color: #0e5273;
   color: #fff;
 }
 /* line 134, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
 .ui-datepicker table.ui-datepicker-calendar tbody td a.ui-state-active.ui-state-hover {
-  background-color: #730E15;
+  background-color: #0e5273;
   color: #fff;
 }
 /* line 139, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/components/_date_picker.scss */
@@ -1698,7 +1698,7 @@ table.index_table {
 /* line 22, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/components/_tables.scss */
 table.index_table th {
   background-color: #efefef;
-  background-image: linear-gradient(180deg, #ffdfdf, #ffdfdf);
+  background-image: linear-gradient(180deg, #dffeff, #dffeff);
   text-shadow: #fff 0 1px 0;
   border: solid 1px #cdcdcd;
   border-color: #d4d4d4;
@@ -1739,8 +1739,8 @@ table.index_table th.sorted-desc a {
 }
 /* line 42, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/components/_tables.scss */
 table.index_table th.sorted-asc, table.index_table th.sorted-desc {
-  background-color: #ffdfdf;
-  background-image: linear-gradient(180deg, #ffdfdf, #ffdfdf);
+  background-color: #dffeff;
+  background-image: linear-gradient(180deg, #dffeff, #dffeff);
 }
 /* line 46, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/components/_tables.scss */
 table.index_table th:last-child {
@@ -1863,7 +1863,7 @@ table.index_table td {
 /* line 14, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
 .ui-dialog .ui-dialog-titlebar {
   background-color: #efefef;
-  background-image: linear-gradient(180deg, #ffdfdf, #ffdfdf);
+  background-image: linear-gradient(180deg, #dffeff, #dffeff);
   text-shadow: #fff 0 1px 0;
   border: solid 1px #cdcdcd;
   border-color: #d4d4d4;
@@ -1910,16 +1910,16 @@ table.index_table td {
   margin-right: 3px;
   padding: 7px 16px 6px;
   text-decoration: none;
-  background-color: #730E15;
-  background-image: linear-gradient(180deg, #730E15, #730E15);
+  background-color: #0e5273;
+  background-image: linear-gradient(180deg, #0e5273, #0e5273);
   text-shadow: #000 0 1px 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
-  border: solid 1px #730E15;
-  border-color: #730E15;
-  border-top-color: #730E15;
-  border-right-color: #730E15;
-  border-bottom-color: #730E15;
-  border-left-color:#730E15;
+  border: solid 1px #0e5273;
+  border-color: #0e5273;
+  border-top-color: #0e5273;
+  border-right-color: #0e5273;
+  border-bottom-color: #0e5273;
+  border-left-color:#0e5273;
   color: #efefef;
 }
 /* line 12, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
@@ -1930,13 +1930,13 @@ table.index_table td {
 /* line 29, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
 .ui-dialog .ui-dialog-buttonpane button:not(.disabled):hover {
   background-color: #8b9297;
-  background-image: linear-gradient(180deg, #730E15, #730E15);
+  background-image: linear-gradient(180deg, #0e5273, #0e5273);
 }
 /* line 33, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
 .ui-dialog .ui-dialog-buttonpane button:not(.disabled):active {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px #FFF;
   background-color: #71797f;
-  background-image: linear-gradient(180deg, #730E15, #730E15);
+  background-image: linear-gradient(180deg, #0e5273, #0e5273);
 }
 /* line 28, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
 .ui-dialog .ui-dialog-buttonpane button:last-child {
@@ -2142,7 +2142,7 @@ table.index_table td {
   height: 0;
   border-width: 0 5px 5px;
   border-style: solid;
-  border-color: #730E15 transparent;
+  border-color: #0e5273 transparent;
   left: -5px;
   top: 1px;
 }
@@ -2154,7 +2154,7 @@ table.index_table td {
   height: 0;
   border-width: 0 5px 5px;
   border-style: solid;
-  border-color: #730E15 transparent;
+  border-color: #0e5273 transparent;
   left: -5px;
   top: 2px;
 }
@@ -2165,12 +2165,12 @@ table.index_table td {
   background-color: white;
   padding: 2px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, #838a90 0px 1px 0px 0px inset;
-  background-color: #730E15;
+  background-color: #0e5273;
   background-color: #686e74;
-  background-image: linear-gradient(180deg, #730E15, #730E15);
-  border: solid 1px #730E15;
-  border-top-color:#730E15;
-  border-bottom-color: #730E15;
+  background-image: linear-gradient(180deg, #0e5273, #0e5273);
+  border: solid 1px #0e5273;
+  border-top-color:#0e5273;
+  border-bottom-color: #0e5273;
   border-radius: 4px;
   z-index: 2000;
   display: none;
@@ -2180,7 +2180,7 @@ table.index_table td {
   display: block;
   background-color: #FFF;
   border: solid 1px #464a4e;
-  box-shadow: #730E15 0px 1px 0px 0px;
+  box-shadow: #0e5273 0px 1px 0px 0px;
   border-radius: 3px;
   margin: 0;
   overflow: hidden;
@@ -2251,15 +2251,15 @@ a.button, a:link.button, a:visited.button, input[type=submit], input[type=button
   padding: 7px 16px 6px;
   text-decoration: none;
   background-color: #838a90;
-  background-image: linear-gradient(180deg, #730E15, #730E15);
+  background-image: linear-gradient(180deg, #0e5273, #0e5273);
   text-shadow: #000 0 1px 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
-  border: solid 1px #730E15;
-  border-color :#730E15;
-  border-top-color: #730E15;
-  border-right-color: #730E15;
-  border-bottom-color: #730E15;
-  border-left-color: #730E15;
+  border: solid 1px #0e5273;
+  border-color :#0e5273;
+  border-top-color: #0e5273;
+  border-right-color: #0e5273;
+  border-bottom-color: #0e5273;
+  border-left-color: #0e5273;
   color: #efefef;
 }
 /* line 12, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
@@ -2269,14 +2269,14 @@ a.button.disabled, a:link.button.disabled, a:visited.button.disabled, input[type
 }
 /* line 29, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
 a.button:not(.disabled):hover, a:link.button:not(.disabled):hover, a:visited.button:not(.disabled):hover, input[type=submit]:not(.disabled):hover, input[type=button]:not(.disabled):hover, button:not(.disabled):hover {
-  background-color: #730E15;
-  background-image: linear-gradient(180deg, #730E15, #730E15);
+  background-color: #0e5273;
+  background-image: linear-gradient(180deg, #0e5273, #0e5273);
 }
 /* line 33, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
 a.button:not(.disabled):active, a:link.button:not(.disabled):active, a:visited.button:not(.disabled):active, input[type=submit]:not(.disabled):active, input[type=button]:not(.disabled):active, button:not(.disabled):active {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px #FFF;
-  background-color: #730E15;
-  background-image: linear-gradient(180deg, #730E15, #730E15);
+  background-color: #0e5273;
+  background-image: linear-gradient(180deg, #0e5273, #0e5273);
 }
 
 /* line 2, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/components/_grid.scss */
@@ -2375,15 +2375,15 @@ a:hover {
   padding: 7px 16px 6px;
   text-decoration: none;
   background-color: #838a90;
-  background-image: linear-gradient(180deg, #730E15, #730E15);
+  background-image: linear-gradient(180deg, #0e5273, #0e5273);
   text-shadow: #000 0 1px 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
-  border: solid 1px #730E15;
-  border-color: #730E15;
-  border-top-color: #730E15;
-  border-right-color: #730E15;
-  border-bottom-color: #730E15;
-  border-left-color: #730E15;
+  border: solid 1px #0e5273;
+  border-color: #0e5273;
+  border-top-color: #0e5273;
+  border-right-color: #0e5273;
+  border-bottom-color: #0e5273;
+  border-left-color: #0e5273;
   color: #efefef;
 }
 /* line 12, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
@@ -2394,13 +2394,13 @@ a:hover {
 /* line 29, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
 .pagination span.page.current:not(.disabled):hover {
   background-color: #8b9297;
-  background-image: linear-gradient(180deg,#730E15, #730E15);
+  background-image: linear-gradient(180deg,#0e5273, #0e5273);
 }
 /* line 33, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
 .pagination span.page.current:not(.disabled):active {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px #FFF;
   background-color: #71797f;
-  background-image: linear-gradient(180deg, #730E15, #730E15);
+  background-image: linear-gradient(180deg, #0e5273, #0e5273);
 }
 /* line 18, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/components/_pagination.scss */
 .pagination a, .pagination span.page.current {
@@ -2498,7 +2498,7 @@ a:hover {
 /* line 27, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/mixins/_sections.scss */
 .section > h3, .panel > h3 {
   background-color: #efefef;
-  background-image: linear-gradient(180deg, #ffdfdf, #ffdfdf);
+  background-image: linear-gradient(180deg, #dffeff, #dffeff);
   text-shadow: #fff 0 1px 0;
   border: solid 1px #cdcdcd;
   border-color: #d4d4d4;
@@ -2538,7 +2538,7 @@ a:hover {
 /* line 27, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/mixins/_sections.scss */
 .sidebar_section > h3 {
   background-color: #efefef;
-  background-image: linear-gradient(180deg, #ffdfdf, #ffdfdf);
+  background-image: linear-gradient(180deg, #dffeff, #dffeff);
   text-shadow: #fff 0 1px 0;
   border: solid 1px #cdcdcd;
   border-color: #d4d4d4;
@@ -2893,7 +2893,7 @@ body.logged_out #content_wrapper #active_admin_content {
 /* line 14, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
 body.logged_out h2 {
   background-color: #efefef;
-  background-image: linear-gradient(180deg, #ffdfdf, #ffdfdf);
+  background-image: linear-gradient(180deg, #dffeff, #dffeff);
   text-shadow: #fff 0 1px 0;
   border: solid 1px #cdcdcd;
   border-color: #d4d4d4;
@@ -2908,8 +2908,8 @@ body.logged_out h2 {
   margin-bottom: 0.5em;
   color: #5E6469;
   padding: 5px 10px 3px 10px;
-  background-color: #730E15;
-  background-image: linear-gradient(180deg, #730E15, #730E15);
+  background-color: #0e5273;
+  background-image: linear-gradient(180deg, #0e5273, #0e5273);
   border-bottom: 1px solid #44484b;
   text-shadow: #000 0 1px 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
@@ -3007,7 +3007,7 @@ body.logged_out #login a {
 /* line 1, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-2.0.0/app/assets/stylesheets/active_admin/structure/_title_bar.scss */
 #title_bar {
   background-color: #efefef;
-  background-image: linear-gradient(180deg, #ffdfdf, #ffdfdf);
+  background-image: linear-gradient(180deg, #dffeff, #dffeff);
   text-shadow: #fff 0 1px 0;
   border: solid 1px #cdcdcd;
   border-color: #d4d4d4;
@@ -3122,5 +3122,5 @@ body {
 
 /* line 22, C:/Users/USUARIO/Desktop/Nueva carpeta/tecni-hidraulicos-admin/tecni-hidraulicos-admin/app/assets/stylesheets/active_admin.scss */
 .header {
-  background-color: #730E15 !important;
+  background-color: #0e5273 !important;
 }

@@ -4,7 +4,7 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Willreyn"
+  config.site_title = "Tecni hidráulicos JB"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -165,7 +165,7 @@ ActiveAdmin.setup do |config|
   # To understand how to localize your app with I18n, read more at
   # https://guides.rubyonrails.org/i18n.html
   #
-  config.meta_tags = { author: 'Willreyn', title: 'Willreyn' }
+  config.meta_tags = { author: 'Tecni hidráulicos JB', title: 'Tecni hidráulicos JB' }
   # You can run `bin/rails runner 'puts I18n.t("date.formats")'` to see the
   # available formats in your application.
   #
@@ -330,7 +330,7 @@ ActiveAdmin.setup do |config|
     private
     def build_footer
       div :id => 'footer' do
-        "Administrador | Tecni Hiráulicos Willreyn. Desarrollado por: &nbsp;<img src='#{asset_path('logo-72x40.png')}' height='15px' ></img> Willreyn  #{Time.zone.now.year.to_s}.".html_safe
+        "Administrador | Tecni hidráulicos JB . Desarrollado por: &nbsp;<img src='#{asset_path('logo-72x40.png')}' height='15px' ></img> Willreyn  #{Time.zone.now.year.to_s}.".html_safe
       end
     end
   end
