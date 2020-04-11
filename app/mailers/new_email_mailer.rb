@@ -17,6 +17,6 @@ class NewEmailMailer < ApplicationMailer
     @name = name
     @subject = @title
 
-    mail(to:  "inter250296@hotmail.com", :reply_to => "inter250296@hotmail.com", name:  "inter250296@hotmail.com", subject:  "inter250296@hotmail.com")
+    mail(to:  recipient, :reply_to => "tecnihidraulicosjb@gmail.com", name:  "Nueva noticia", subject:  title)
   end
 end

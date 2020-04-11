@@ -3,17 +3,68 @@
 <html>
 <head>
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
-<body>
-<div>Name: <%= @name %></div>
-<br>
-<div>Subject: <%= @bodyone %></div>
-<br>
-<div>Reply to: <%= @email %></div>
-<br>
-<div>Message: </div>
-<br>
-<div><p><%= @bodyone %></p></div>
-<br>
+<style>
+  section{width:100%; float:left;}
+  .banner-section{background:url(<%= @img_url_one %>); background-size:cover; height: 380px; left: 0; position: absolute; top: 0; background-position:0;}
+  .post-title-block{padding:100px 0;}
+  .post-title-block h1 {color: #fff; font-size: 85px; font-weight: bold; text-transform: capitalize;}
+  .post-title-block li{font-size:20px; color: #fff;}
+  .image-block{float:left; width:100%; margin-bottom:10px;}
+    img{
+      max-width: 900px;
+    }
+</style>
+<body style="margin: 0">
+<div class="col-lg-12 col-md-12 col-sm-12 post-title-block banner-section">
+
+  <h1 class="text-center">  <%= @title %> </h1>
+  <ul class="list-inline text-center">
+    <li style="display: inline-block;"> <%= @note_1 %> </li>
+
+  </ul>
+</div>
+
+<section class="post-content-section">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-9 col-md-9 col-sm-12">
+        <p class="lead"style="margin-top: 25px;">Queremos que sepas lo importante que eres para nosotros, te invitamos para que leas esta y muchas mas noticias de descuentos y promociones que tenemos para tí.</p>
+
+        <p> <%= @bodyone %> </p>
+        <blockquote style="background-color: whitesmoke; width: 42%;">
+          <p> <%= @note_1 %></p>
+          <footer>Administrador del sitio <cite title="Source Title">JB</cite></footer>
+        </blockquote>
+        <p class="lead"style="margin-top: 25px;"><%= @subtitle %> </p>
+        <p><%= @bodytwho %> </p>
+
+        <div class="image-block">
+          <img src="<%= @img_url_two %>"   class="img-responsive">
+        </div>
+        <p class="lead"style="margin-top: 25px;"><%= @subtitletwo %> </p>
+        <p><%= @bodythree %> </p>
+        <blockquote>
+          <p><%= @note_2 %> </p>
+
+        </blockquote>
+
+        <div class="image-block">
+          <img src="<%= @img_url_three %>" class="img-responsive">
+        </div>
+
+        <p>Gracias por leernos, enteraté de más noticias en aquí.</p>
+
+      </div>
+    </div>
+
+
+  </div> <!-- /container -->
+</section>
 </body>
 </html>
