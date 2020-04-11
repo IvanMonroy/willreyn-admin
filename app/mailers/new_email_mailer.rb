@@ -1,5 +1,5 @@
 class NewEmailMailer < ApplicationMailer
-  default from: "inter250296@hotmail.com"
+  default from: "tecnihidraulicosjb@gmail.com"
   def new_email(title, bodyone, subtitle, subtitletwo, bodytwho, bodythree, img_url_one, img_url_two, img_url_three, autor, note_1, note_2, name, recipient)
     @title = title
     @bodyone = bodyone

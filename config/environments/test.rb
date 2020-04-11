@@ -17,7 +17,15 @@ Rails.application.configure do
   config.public_file_server.headers = {
     'Cache-Control' => "public, max-age=#{1.hour.to_i}"
   }
-
+  config.action_mailer.smtp_settings = {
+      address: "smtp.gmail.com",
+      port: 587,
+      domain: "mail.google.com",
+      user_name: "tecnihidraulicosjb@gmail.com",
+      password: "Bogota.2020",
+      authentication: "plain",
+      enable_starttls_auto: true
+  }
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false

@@ -75,7 +75,15 @@ Rails.application.configure do
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
-
+  config.action_mailer.smtp_settings = {
+      address: "smtp.gmail.com",
+      port: 587,
+      domain: "mail.google.com",
+      user_name: "tecnihidraulicosjb@gmail.com",
+      password: "Bogota.2020",
+      authentication: "plain",
+      enable_starttls_auto: true
+  }
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
