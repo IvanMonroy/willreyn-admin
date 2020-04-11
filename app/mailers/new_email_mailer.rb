@@ -1,5 +1,5 @@
 class NewEmailMailer < ApplicationMailer
-  default from: "noreply@tecnihidraulicos-jb.com"
+  default from: "inter250296@hotmail.com"
   def new_email(title, bodyone, subtitle, subtitletwo, bodytwho, bodythree, img_url_one, img_url_two, img_url_three, autor, note_1, note_2, name, recipient)
     @title = title
     @bodyone = bodyone
@@ -17,6 +17,6 @@ class NewEmailMailer < ApplicationMailer
     @name = name
     @subject = @title
 
-    mail(to:  "ivan.monroy@hrinteractive.co", :reply_to => "ivan.monroy@hrinteractive.co", name:  "ivan.monroy@hrinteractive.co", subject:  "ivan.monroy@hrinteractive.co")
+    mail(to:  "inter250296@hotmail.com", :reply_to => "inter250296@hotmail.com", name:  "inter250296@hotmail.com", subject:  "inter250296@hotmail.com")
   end
 end
