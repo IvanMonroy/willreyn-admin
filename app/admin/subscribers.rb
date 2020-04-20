@@ -49,9 +49,10 @@ ActiveAdmin.register Subscriber, :as => "Suscripciones" do
   controller do
 
     def create
+      news = IndexNew.where("id != ?", params[:subscriber]['id']).select("id,img_url_one,bodyone, title").limit(3).order("id desc")
       new = IndexNew.find(params[:subscriber]['id'])
       Subscriber.where(:is_subscriber => "true").each do |sub|
-        NewEmailMailer.new_email(new.title, new.bodyone, new.subtitle, new.subtitletwo, new.bodytwho, new.bodythree, new.img_url_one, new.img_url_two, new.img_url_three, new.autor, new.note_1, new.note_2, sub.name, sub.email).deliver_now
+        NewEmailMailer.new_email(new.title, new.bodyone, new.subtitle, new.subtitletwo, new.bodytwho, new.bodythree, new.img_url_one, new.img_url_two, new.img_url_three, new.autor, new.note_1, new.note_2, sub.name, sub.email, news).deliver_now
       end
     end
    private
