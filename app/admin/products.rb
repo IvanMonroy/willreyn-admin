@@ -2,7 +2,7 @@
 ActiveAdmin.register Product, :as => "Productos" do
 
   actions :all
-  permit_params :name, :price, :description ,:mark ,:imgurl ,:available ,:image, :category
+  permit_params :name, :price, :description ,:mark ,:imgurl ,:available ,:imageurltwo, :category
   # Create sections on the index screen
   index do
     id_column
@@ -20,7 +20,6 @@ ActiveAdmin.register Product, :as => "Productos" do
   filter :price
   filter :description
   filter :mark
-  filter :imgurl
   filter :available
   filter :category
 
@@ -31,8 +30,10 @@ ActiveAdmin.register Product, :as => "Productos" do
       f.input :description, label: "Descripción"
       f.input :mark, label: "Marca"
       f.input :imgurl, :as => :file, label: "Imagen 1"
-      f.input :image, :as => :file, label: "Imagen 2"
-      f.input :available, label: "Disponibilidad"
+      f.input :imageurltwo, :as => :file, label: "Imagen 2"
+      DISPONIBILIDADES = [["Sí","true"], ["No","false"]]
+      f.input :available, :label => 'Disponibles', :as => :select, :collection => DISPONIBILIDADES
+
       f.input :category, label: "Categoría"
 
     end
@@ -43,17 +44,44 @@ ActiveAdmin.register Product, :as => "Productos" do
     def create
       @product = Product.new(product_params)
       print product_params
-      #@product.imgurl = Base64.encode64(product_params[:imgurl].read).gsub(/[\r\n]+/, '')
-      @product.image = Base64.encode64(product_params[:image].read).gsub(/[\r\n]+/, '')
-      @product.save
+      @product.imgurl = Base64.encode64(product_params[:imgurl].read).gsub(/[\r\n]+/, '')
+      @product.imageurltwo = Base64.encode64(product_params[:imageurltwo].read).gsub(/[\r\n]+/, '')
+      if @product.save
+        redirect_to productos_path
+      end
+    rescue Exception => e
+      print e
+    end
 
+    def update
+      @product = Product.find_by_id(params[:id])
+
+      @product.name = product_params[:name]
+      @product.price = product_params[:price]
+      @product.description = product_params[:description]
+      @product.mark = product_params[:mark]
+      @product.available = product_params[:available]
+      @product.category = product_params[:category]
+
+      unless product_params[:imgurl].nil?
+        @product.imgurl = Base64.encode64(product_params[:imgurl].read).gsub(/[\r\n]+/, '')
+      end
+
+      unless product_params[:imageurltwo].nil?
+        print 'compa image no llefo null'
+        @product.imageurltwo = Base64.encode64(product_params[:imageurltwo].read).gsub(/[\r\n]+/, '')
+      end
+
+      if @product.save
+         redirect_to productos_path
+      end
     rescue Exception => e
       print e
     end
 
     private
     def product_params
-      params.require(:product).permit(:name, :price, :description ,:mark ,:imgurl ,:available ,:image, :category )
+      params.require(:product).permit(:name, :price, :description ,:mark ,:imgurl ,:available ,:imageurltwo, :category )
     end
 
 
