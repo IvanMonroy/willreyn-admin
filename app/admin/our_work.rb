@@ -56,7 +56,7 @@ ActiveAdmin.register OurWork, :as => "Nuestros Trabajos V2"  do
 
    private
    def our_work_params
-     params.require(:our_work).permit( :category, :name, :situation, :solution, :image_one, :image_two, :image_three, :image_fourth, :image_fifth   )
+     params.require(:our_work).permit(:category, :name, :situation, :solution, :image_one, :image_two, :image_three, :image_fourth, :image_fifth)
    end
 
   end
