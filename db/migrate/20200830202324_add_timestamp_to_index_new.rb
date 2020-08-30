@@ -5,3 +5,4 @@ class AddTimestampToIndexNew < ActiveRecord::Migration[5.2]
     add_timestamps :products, null: false, default: -> { 'NOW()' }
   end
 end
+
